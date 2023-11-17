@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------- fontawsome cdn link  ------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!---------- bootstrap cdn link ----------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <!---------------- custom css -------------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg  bg-header py-2 ">
+        <div class="container">
+            <a class="navbar-brand mr-5" href="#">
+                <img src="./assets/img/pngwing.com.png" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler text-light " type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto  justify-content-around fs-2">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light px-3" href="#">Flights <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#">Car Hire </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#">Trip finder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#">Inspirations</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <button class="btn text-light dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/img/flag-400.png" alt="" class="nav-flag img-fluid"> English
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-success px-3" href="javascript:void()"><i
+                                class="fa-solid fa-circle-user"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------- nav section ends-------------------->
+
+    <!------------------- banner section starts ----------------->
+    <section class="banner h-auto  py-5 ">
+        <!-- heading -->
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-7 col-md-12  mt-2  top-15">
+                    <h1 class="mt-1 fs-md-6">"The best place to find the cheapest Airfares"</h1>
+                    <h3>-every single time</h3>
+                </div>
+            </div>
+        </div>
+        <!-- heading end -->
+
+        <!-- form starts -->
+        <div class="container h-auto  bg-form top-12 mb-4 rounded">
+            <div class="row navtab-xs">
+                <nav class="mb-2 p-1 ">
+                    <div class="nav nav-tabs border-0 " id="nav-tab" role="tablist">
+                        <button class="nav-link rounded-0 border-0 text-white bg-navtab btn-width-80 active"
+                            id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                            aria-controls="nav-home" aria-selected="true">
+                            <i class="fa-solid fa-plane-departure"></i><a href=""> Flights</a>
+                        </button>
+                        <button class="nav-link rounded-0 border-0 text-white bg-navtab mx-1 py-0 btn-width-80"
+                            id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <i class="fa-solid fa-hotel"></i><a href=""> Hotels</a>
+                        </button>
+                        <button class="nav-link rounded-0 border-0 text-white bg-navtab " id="nav-contact-tab"
+                            data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">
+                            <i class="fa-solid fa-car"></i><a href=""> Cars</a>
+                        </button>
+                    </div>
+                </nav>
+                <!-- 1 navtab-->
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <form action="" class="p-0">
+                            <div class="row align-items-center px-1">
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="text" class="form-control rounded-0" name="origincity" id="origincity"
+                                        placeholder="Enter Origin City" aria-label="origin">
+                                </div>
+                                <i class="fa-solid fa-arrows-rotate text-light"></i>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="text" class="form-control rounded-0"
+                                        placeholder="Enter Destination City" name="destination" id="destination"
+                                        aria-label="destination">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="date" class="form-control rounded-0" name="sdate" id="sdate"
+                                        aria-label="sdate">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="date" class="form-control rounded-0" name="edate" id="edate"
+                                        aria-label="ldate">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <select name="passenger" id="passenger" class="form-select p-2 w-100 border-0">
+                                        <option value="no">No of Passenger</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-1">
+                                    <input type="button" class="btn form-control btn-danger btn-search" value="Search"
+                                        name="search" id="search" aria-label="search">
+                                </div>
+                            </div>
+                            <div class="row ms-auto px-1 formb">
+                                <div class="col-sm-6 col-lg-5 ">
+                                    <ul>
+                                        <li>
+                                            <p class="d-inline text-light"><i class="fa-solid fa-suitcase-rolling"></i>
+                                                Trip type</p>
+                                            <select name="triptype" id="triptype"
+                                                class="form-select  d-inline  bg-transparent border-0 text-light">
+                                                <option value="return" class="text-dark"><i
+                                                        class="fa-solid fa-ticket"></i>
+                                                    Return type </option>
+                                                <option value="Vacation" class="text-dark">Vacation</option>
+                                                <option value="edu" class="text-dark">Education</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <p class="d-inline text-light"><i class="fa-solid fa-ticket"></i> Ticket
+                                                class</p>
+                                            <select name="fclass" id="fclass"
+                                                class="form-select  d-inline  bg-transparent border-0 text-light">
+                                                <option value="eco" class="text-dark"> Economy </option>
+                                                <option value="busi" class="text-dark">Business</option>
+                                                <option value="pri" class="text-dark">private</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-lg-5  text-light d-inline">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="direct" id="direct">
+                                            <label for="direct">Direct flights only</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nerby" id="nearby">
+                                            <label for="nearby">Include nearby airports</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 2 -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <form action="" class="p-0">
+                            <div class="row align-items-center px-1">
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="text" class="form-control rounded-0" name="origincity" id="origincity"
+                                        placeholder="Enter Origin City" aria-label="origin">
+                                </div>
+                                <i class="fa-solid fa-arrows-rotate text-light"></i>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="text" class="form-control rounded-0"
+                                        placeholder="Enter Destination City" name="destination" id="destination"
+                                        aria-label="destination">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="date" class="form-control rounded-0" name="sdate" id="sdate"
+                                        aria-label="sdate">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="date" class="form-control rounded-0" name="edate" id="edate"
+                                        aria-label="ldate">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <select name="passenger" id="passenger" class="form-select p-2 w-100 border-0">
+                                        <option value="no">No of Passenger</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-1">
+                                    <input type="button" class="btn form-control btn-danger btn-search" value="Search"
+                                        name="search" id="search" aria-label="search">
+                                </div>
+                            </div>
+                            <div class="row ms-auto px-1 formb">
+                                <div class="col-sm-6 col-lg-5 ">
+                                    <ul>
+                                        <li>
+                                            <p class="d-inline text-light"><i class="fa-solid fa-suitcase-rolling"></i>
+                                                Trip type</p>
+                                            <select name="triptype" id="triptype"
+                                                class="form-select  d-inline  bg-transparent border-0 text-light">
+                                                <option value="return" class="text-dark"><i
+                                                        class="fa-solid fa-ticket"></i>
+                                                    Return type </option>
+                                                <option value="Vacation" class="text-dark">Vacation</option>
+                                                <option value="edu" class="text-dark">Education</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <p class="d-inline text-light"><i class="fa-solid fa-ticket"></i> Ticket
+                                                class</p>
+                                            <select name="fclass" id="fclass"
+                                                class="form-select  d-inline  bg-transparent border-0 text-light">
+                                                <option value="eco" class="text-dark"> Economy </option>
+                                                <option value="busi" class="text-dark">Business</option>
+                                                <option value="pri" class="text-dark">private</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-lg-5  text-light d-inline">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="direct" id="direct">
+                                            <label for="direct">Direct flights only</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nerby" id="nearby">
+                                            <label for="nearby">Include nearby airports</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 3 -->
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+                        <form action="" class="p-0">
+                            <div class="row align-items-center px-1">
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="text" class="form-control rounded-0" name="origincity" id="origincity"
+                                        placeholder="Enter Origin City" aria-label="origin">
+                                </div>
+                                <i class="fa-solid fa-arrows-rotate text-light"></i>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="text" class="form-control rounded-0"
+                                        placeholder="Enter Destination City" name="destination" id="destination"
+                                        aria-label="destination">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="date" class="form-control rounded-0" name="sdate" id="sdate"
+                                        aria-label="sdate">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <input type="date" class="form-control rounded-0" name="edate" id="edate"
+                                        aria-label="ldate">
+                                </div>
+                                <div class="col-sm-6 col-lg-2 mb-1">
+                                    <select name="passenger" id="passenger" class="form-select p-2 w-100 border-0">
+                                        <option value="no">No of Passenger</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-lg-1">
+                                    <input type="button" class="btn form-control btn-danger btn-search" value="Search"
+                                        name="search" id="search" aria-label="search">
+                                </div>
+                            </div>
+                            <div class="row ms-auto px-1 formb">
+                                <div class="col-sm-6 col-lg-5 ">
+                                    <ul>
+                                        <li>
+                                            <p class="d-inline text-light"><i class="fa-solid fa-suitcase-rolling"></i>
+                                                Trip type</p>
+                                            <select name="triptype" id="triptype"
+                                                class="form-select  d-inline  bg-transparent border-0 text-light">
+                                                <option value="return" class="text-dark"><i
+                                                        class="fa-solid fa-ticket"></i>
+                                                    Return type </option>
+                                                <option value="Vacation" class="text-dark">Vacation</option>
+                                                <option value="edu" class="text-dark">Education</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <p class="d-inline text-light"><i class="fa-solid fa-ticket"></i> Ticket
+                                                class</p>
+                                            <select name="fclass" id="fclass"
+                                                class="form-select  d-inline  bg-transparent border-0 text-light">
+                                                <option value="eco" class="text-dark"> Economy </option>
+                                                <option value="busi" class="text-dark">Business</option>
+                                                <option value="pri" class="text-dark">private</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-lg-5  text-light d-inline">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="direct" id="direct">
+                                            <label for="direct">Direct flights only</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="nerby" id="nearby">
+                                            <label for="nearby">Include nearby airports</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- form ends -->
+    </section>
+    <!--------------- banner section ends ------------------->
+
+    <!-------------- fun section starts----------------- -->
+    <section class="features text-center text-light py-5">
+        <h3 class=" p-3">SOME FUN WE COVERED</h3>
+        <div class="container">
+            <div class="row  ">
+                <div class="col-lg-2 col-md-4 col-6   ">
+                    <div class="fun-col py-4 px-3 my-2">
+                        <i class="fa-solid fa-person-biking pb-3 fs-1"></i>
+                        <h5>5670M</h5>
+                        <h6 class="font-weight-light">CYCLING TRACK</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class=" fun-col py-4 px-2 my-2">
+                        <i class="fa-solid fa-ship pb-3 fs-1"></i>
+                        <h5>454M</h5>
+                        <h6 class="font-weight-light">SAILING DISTANCE</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="fun-col py-4 px-2 my-2">
+                        <i class="fa-solid fa-route pb-3 fs-1"></i>
+                        <h5>5642M</h5>
+                        <h6 class="font-weight-light">DISTANCE COVERED</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="fun-col py-4 px-2 my-2">
+                        <i class="fa-solid fa-person-hiking pb-3 fs-1"></i>
+                        <h5>123M</h5>
+                        <h6 class="font-weight-light">ALTITUDE HIKED</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="fun-col py-4 px-2 my-2">
+                        <i class="fa-solid fa-cable-car pb-3 fs-1"></i>
+                        <h5>8532M</h5>
+                        <h6 class="font-weight-light">SPEND ADVENTURE</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="fun-col py-4 px-2 my-2">
+                        <i class="fa-solid fa-otter pb-3 fs-1"></i>
+                        <h5>5372M</h5>
+                        <h6 class="font-weight-light">JUNGLE DISTANCE</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------- feature section ends ------------------->
+
+    <!-------------newsletter   section starts--- --------->
+    <section class="newsletter  h-auto py-5 text-light text-center">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <h3 class="py-2">SUBSCRIBE FOR TRAVEL NEWSLETTER</h3>
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis nihil
+                        consequuntur tempora eaque sed aliquid libero officia facere voluptates? Qui non quod sapiente
+                        adipisci sit animi earum ducimus enim.</p>
+                    <form action="">
+                        <input type="email" name="email" id="eamil" placeholder="Enter your email address.. "
+                            class="w-75 bg-transparent border text-white px-3 py-2">
+                        <input type="submit" value="SEARCH" class="px-3 py-2">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------- newsletter section ends--------------- -->
+    <!------------ destination section starts------------ -->
+    <section class="destination py-5 ">
+        <div class="container text-center">
+            <div class="row">
+                <h3 class="text-light m-auto ">POPULAR DESTINATION</h3>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3 mx-sm-0 ">
+                        <img src="./assets/img/visit1.png" alt="" class="card-img-top ">
+                        <div class="card-body ">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3">
+                        <img src="./assets/img/visit2.png" alt="" class="card-img-top">
+                        <div class="card-body ">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3">
+                        <img src="./assets/img/visit3.png" alt="" class="card-img-top">
+                        <div class="card-body ">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3">
+                        <img src="./assets/img/visit4.png" alt="" class="card-img-top">
+                        <div class="card-body ">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3 ">
+                        <img src="./assets/img/visit5.png" alt="" class="card-img-top">
+                        <div class="card-body ">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3">
+                        <img src="./assets/img/visit6.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3">
+                        <img src="./assets/img/visit7.png" alt="" class="card-img-top">
+                        <div class="card-body ">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 mb-2">
+                    <div class="card border-3">
+                        <img src="./assets/img/visit8.png" alt="" class="card-img-top">
+                        <div class="card-body ">
+                            <p class="font-weight-bold"><span class="text-warning">$999</span> Venezia, Veneto , Italy ,
+                                Vacation</p>
+                            <p>This is the lowest price that we have seen in a while</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!---------------- destination section ends  ------------->
+
+    <!-- estimate section starts -->
+
+    <section class="estimate text-center ">
+        <div class="container-fluid bg-estimate">
+            <div class="p-5 text-light">
+                <h3>GET A QUICK ESTIMATE</h3>
+                <h5 class=" ">GET A PROFESIONAL HELP</h5>
+                <hr class="m-auto">
+                <form action="" class="justify-content-center pt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-2 col-sm-6   text-muted mb-2">
+                            <select name="" id="" class="form-select p-2 col-12 text-muted">
+                                <option value="">Travel purpose</option>
+                                <option value="">Vacation</option>
+                                <option value="">Eduaction</option>
+                                <option value="">Work</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2">
+                            <input type="text" placeholder="Enter date" class="form-control rounded-0 p-2 mb-2 col-12">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 ">
+                            <select name="people" id="people" class="p-2 text-muted mb-2 col-12">
+                                <option value="no">No of people</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 ">
+                            <input type="email" placeholder="Your email" name="email" id="email" class="form-control rounded-0 p-2 mb-2 col-12">
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-2">
+                            <input type="submit" value="CALCULATE "
+                                class="calculate py-2  px-4 bg-warning border-0 col-12">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- estimate section ends -->
+
+    <!-- blog section starts -->
+    <section class="blog container-fluid py-5">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-9  m-auto text-center">
+                    <h3 class="pb-3">LATEST BLOG</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorem perspiciatis temporibus,
+                        facere, itaque ab beatae aliquam, laboriosam provident fuga animi! Iusto a iure esse voluptatum
+                        iste, quidem sit itaque.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="./assets/img/baby.jpg" alt="" class="img-fluid h-100">
+                </div>
+                <div class="col-md-4">
+                    <span>Feb 10,2019</span>
+                    <h5 class="font-weight-light ">10 THINGS TO DO BEFORE TRAVEL</h5>
+                    <hr class="border-yellow">
+                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis at labore
+                        perspiciatis quam nam debitis te</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/img/visit7.png" alt="" class="img-fluid h-100">
+                </div>
+                <div class="col-md-4">
+                    <span>Feb 10,2019</span>
+                    <h5 class="font-weight-light">10 THINGS TO DO BEFORE TRAVEL</h5>
+                    <hr class="border-yellow">
+                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis at labore
+                        perspiciatis quam nam debitis te</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section ends -->
+
+    <!-- footer section strts  -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h5 class="text-light py-2">Top counteries</h5>
+                    <ul>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">United States</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted ">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">United kingdom</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">Spain</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">Thailand</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">India</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">Italy</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">Germany</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">Australia</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-muted">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                Flights to <b class="text-light">France</b>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h5 class="text-light py-2">Top Cities</h5>
+                    <ul>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">New York</b> United States
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">London</b> United Kingdom
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">Istambul</b> Turkey
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">Bangkok</b> Thailand
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">Delhi </b> India
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">Italy</b> United States
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">Paris</b> France
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:void()" class="text-muted">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Flights to <b class="text-light">Sydney</b> Australia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <h5 class="text-light py-2">Internatinal sites</h5>
+                    <ul>
+                        <li>
+                            <a href="javascript:void()" class="text-light">
+                                <img src="./assets/img/AZ.svg" alt="" class="img-fluid  h-25">
+                                Lorem ipsum dolor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-light">
+                                <img src="./assets/img/BV.svg" alt="" class="img-fluid  h-25">
+                                Lorem ipsum dolor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-light">
+                                <img src="./assets/img/FO.svg" alt="" class="img-fluid  h-25">
+                                Lorem ipsum dolor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-light">
+                                <img src="./assets/img/HT.svg" alt="" class="img-fluid  h-25">
+                                Lorem ipsum dolor
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <h5 class="py-2">.</h5>
+                    <ul class="">
+                        <li>
+                            <a href="javascript:void()" class="text-light">
+                                <img src="./assets/img/HT.svg" alt="" class="img-fluid  h-25">
+                                Lorem ipsum dolor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-light">
+                                <img src="./assets/img/HT.svg" alt="" class="img-fluid  h-25">
+                                Lorem ipsum dolor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void()" class="text-light">
+                                <img src="./assets/img/HT.svg" alt="" class="img-fluid  h-25">
+                                Lorem ipsum dolor
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-10 col-12 col-md-12 foot-end ">
+                    <ul class=" ">
+                        <li>
+                            <a href="javascript:void()" class="">
+                                <img src="./assets/img/momomdo-icon.jpg" alt="" class=" img-icon">
+                            </a>
+                        </li>
+                        <li><a href="javascript:void()">About us</a></li>
+                        <li><a href="javascript:void()">jobs</a></li>
+                        <li><a href="javascript:void()">Press</a></li>
+                        <li><a href="javascript:void()">Affiliate</a></li>
+                        <li><a href="javascript:void()">Terms of use</a></li>
+                        <li><a href="javascript:void()">Privacy policy</a></li>
+                        <li><a href="javascript:void()">Cookies</a></li>
+                        <li><a href="javascript:void()">Airlines</a></li>
+                        <li><a href="javascript:void()">Apps </a></li>
+                    </ul>
+                    <p class=" ps-4 text-light  ">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque minus tempore nemo voluptate
+                        sequi odit
+                    </p>
+                </div>
+                <ul
+                    class="social-icon col-5 col-md-4 col-lg-2 col-md-3 m-auto  m-lg-0  justify-content-evenly  justify-content-md-around  ">
+                    <li><a href="javascript:void"><i class="fa-brands fa-twitter  icon"></i></a></li>
+                    <li><a href="javascript:void"><i class="fa-brands fa-facebook  icon"></i></a></li>
+                    <li><a href="javascript:void"><i class="fa-brands fa-instagram  icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer dsection ends -->
+
+
+    <!------------ javascript  ------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

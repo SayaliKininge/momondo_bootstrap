@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar a:hover {
+    color: #ee4545 !important;
+}
+
+li {
+    list-style: none;
+}
+
+.fs-1 {
+    font-size: 40px;
+}
+
+.fs-2 {
+    font-size: 18px;
+}
+
+.fs-3 {
+    font-size: 25px;
+}
+
+.top-15 {
+    top: 10%;
+}
+
+.top-12 {
+    margin-top: 12%;
+}
+
+.border-3 {
+    border: 5px solid white;
+}
+
+.bg-header {
+    background-color: #101B37;
+}
+
+.bg-form {
+    background-color: rgba(66, 2, 80, 0.6);
+}
+
+/* navbar section s */
+.navbar .navbar-brand img {
+    width: 150px;
+    height: 30px;
+}
+.nav-flag {
+    width: 30px;
+}
+
+/* banner section start */
+.banner {
+    width: 100%;
+    height: auto;
+    background: url(../img/wallpaperflare-cropped.jpg) center;
+    background-size: cover;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.nav-tabs .active {
+    background-color: rgb(239, 2, 2);
+    color: #fff;
+}
+
+.bg-navtab {
+    background: rgba(66, 2, 80, 0.6);
+
+}
+
+.nav-tabs .nav-link.active {
+    background: #ee4545;
+    border-radius: 10%;
+}
+
+.bg-navtab:focus {
+    outline: none;
+
+}
+
+.btn-search {
+    border-radius: 50%;
+}
+
+.formb ul {
+    display: flex;
+}
+
+/* banner section end */
+
+/* fun section start */
+.features {
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/funbg.png) center no-repeat;
+    background-size: cover;
+}
+
+.features .fun-col {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* feature section ends */
+
+/* newsletter section starts */
+.newsletter {
+    background: linear-gradient(rgba(72, 0, 79, 0.8), rgba(79, 1, 97, 0.8)), url(../img/subbg.jpeg) no-repeat;
+background-position: top;
+}
+
+.newsletter ::placeholder {
+    color: aliceblue;
+}
+
+/* newsletter section ends */
+
+/* destination section starts */
+.destination {
+    background-color: #1F172F;
+}
+
+.destination .card-img-top {
+    height: 170px;
+}
+
+/* estimate section starts  */
+.bg-estimate {
+    height: auto;
+    background: url(../img/helpimg.png) no-repeat;
+    background-position: right;
+}
+
+.estimate {
+    height: auto;
+    background-color: #654DAD;
+}
+
+.calculate:hover {
+    background-color:black!important;
+    color: white;
+}
+.estimate hr {
+    border: 1px solid white ;
+    width: 190px;
+   
+}
+.border-yellow {
+    border: 2px solid rgb(255, 157, 0);
+    width: 70px;
+}
+
+/* estimate section ends */
+
+/* footer section starts */
+footer {
+    height: auto;
+    background: linear-gradient(rgba(28, 7, 31, 0.9), rgba(32, 7, 36, 0.9)), url(../img/aeroplane-pictures-n2k6ba71eizhgdb1.webp) no-repeat center;
+    background-size: cover;
+}
+
+footer img {
+    width: 20px;
+}
+
+footer .img-icon {
+    width: 40px;
+}
+
+.foot-end li,
+.social-icon li {
+    padding: 0px 10px;
+    display: inline-block !important;
+}
+
+.social-icon .icon {
+    font-size: 25px;
+}
+footer a:hover,
+footer b:hover
+ {
+    color: #ee4545 !important;
+}
+
+/* footer section ends */
+
+/* media queries */
+@media screen and (min-width: 992px) {
+
+    .btn-search {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse ul li a:hover {
+        color: #000 !important;
+        background-color: rgba(255, 253, 253, 0.6);
+    }
+
+    .banner {
+        height: 150vh;
+    }
+
+    .tab-content i {
+        display: none;
+    }
+
+    .btn-search {
+        border-radius: 0%;
+
+    }
+
+    .formb ul {
+        display: block;
+    }
+
+    .fa-arrows-rotate {
+        display: none;
+    }
+
+    .foot-end ul li {
+        width: auto;
+        float: none;
+    }
+
+    .foot-end ul li:first-child {
+        display: inline-block !important;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 0px 10px;
+        margin: 0px;
+    }
+
+    .rounded-md-0 {
+        border-radius: 0%;
+        border: 0;
+    }
+
+    .foot-end ul li {
+        width: 50%;
+        float: left;
+    }
+
+    .foot-end ul li:first-child {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .foot-end p {
+        display: inline-block;
+    }
+
+    .foot-end li,
+    .social-icon li {
+        padding: 0px 5px;
+    }
+
+    .social-icon .icon {
+        font-size: 15px;
+    }
+    .nav-tabs button a {
+      display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    h1 {
+        font-size: 35px !important;
+    }
+    h3 {
+        font-size: 20px ;
+    }
+    .card {
+      margin: 0px 10px;
+    }
+}
