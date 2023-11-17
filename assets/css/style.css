@@ -7,10 +7,12 @@
 a {
     color: #fff;
 }
+
 a:hover {
     text-decoration: none;
     color: #fff;
 }
+
 .navbar a:hover {
     color: #ee4545 !important;
 }
@@ -56,6 +58,7 @@ li {
     width: 150px;
     height: 30px;
 }
+
 .nav-flag {
     width: 30px;
 }
@@ -93,6 +96,11 @@ li {
 
 }
 
+.btn-danger1 {
+    background-color: rgb(192, 41, 41);
+    color: white;
+}
+
 .btn-search {
     border-radius: 50%;
 }
@@ -119,7 +127,7 @@ li {
 /* newsletter section starts */
 .newsletter {
     background: linear-gradient(rgba(72, 0, 79, 0.8), rgba(79, 1, 97, 0.8)), url(../img/subbg.jpeg) no-repeat;
-background-position: top;
+    background-position: top;
 }
 
 .newsletter ::placeholder {
@@ -150,14 +158,16 @@ background-position: top;
 }
 
 .calculate:hover {
-    background-color:black!important;
+    background-color: black !important;
     color: white;
 }
+
 .estimate hr {
-    border: 1px solid white ;
+    border: 1px solid white;
     width: 190px;
-   
+
 }
+
 .border-yellow {
     border: 2px solid rgb(255, 157, 0);
     width: 70px;
@@ -189,9 +199,9 @@ footer .img-icon {
 .social-icon .icon {
     font-size: 25px;
 }
+
 footer a:hover,
-footer b:hover
- {
+footer b:hover {
     color: #ee4545 !important;
 }
 
@@ -280,19 +290,72 @@ footer b:hover
     .social-icon .icon {
         font-size: 15px;
     }
-    .nav-tabs button a {
-      display: none;
-    }
-}
 
-@media screen and (max-width:576px) {
+    .nav-tabs button a {
+        display: none;
+    }
+
+    p,
+    a,
+    span {
+        font-size: 12px;
+    }
+
     h1 {
         font-size: 35px !important;
     }
+
     h3 {
-        font-size: 20px ;
+        font-size: 20px;
     }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    ::placeholder,
+    label,
+    select {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+
+    p,
+    a,
+    span {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        width: 90px;
+
+    }
+
+    .btn-search1 {
+        font-size: 12px;
+    }
+
+    .destination {
+        padding: 20px 0px !important;
+    }
+
     .card {
-      margin: 0px 10px;
+        margin: 0px 10px;
+    }
+
+    .blog {
+        text-align: center;
+    }
+
+    .blog hr {
+        margin: auto;
     }
 }
